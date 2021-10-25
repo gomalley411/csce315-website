@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--Copyright (c) George O'Malley (aka "Gommeh") 2021. All rights reserved.<!-->
+
+<html>
+<head>
+    <link href="assets\css\styles.css" rel="stylesheet">
+    <link href="assets\css\cardstyle.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="assets\img\favicon.ico">
+    <title>Gommeh's Crappy Website - Blackjack</title>
+</head>
+
+<h1>Gommeh's Crappy Blackjack Game</h1>
+<nav>
+    <a href="wolfsbane.html">The Wolfsbane Potion - </a>
+    <a href="ourplan.html">Our Contingency Plan</a>
+    <br>
+</nav>
+<h2>Welcome to the Game!</h2>
+<div class = "playerinfo">
+    <h3>Please input your username here.</h3>
+    <form id= "getusername" action = "gameplay.html" method = "get">
+        <label for = "name">Username</label>
+        <input type = "text" id = "name" name = "user_name">
+        <input type = "submit" id = "submit_username_button" value = "Submit">
+    </form>
+    <br><br>
+</div>
+<script src="assets\js\models.js"></script>
+<script src="assets\js\view.js"></script>
+<script src="assets\js\app.js"></script>
+</body>
+</html>

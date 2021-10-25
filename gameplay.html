@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--Copyright (c) George O'Malley (aka "Gommeh") 2021. All rights reserved.<!-->
+
+<html>
+<head>
+    <link href="assets\css\styles.css" rel="stylesheet">
+    <link href="assets\css\cardstyle.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <title>Gommeh's Crappy Website - Blackjack</title>
+
+</head>
+
+<body onload="setUsername(getName());">
+<h1>Gommeh's Crappy Website</h1>
+<h2>Blackjack Game</h2>
+<nav>
+    <a href="wolfsbane.html">The Wolfsbane Potion - </a>
+    <a href="ourplan.html">Our Contingency Plan</a>
+    <br>
+</nav>
+<div id = "userName">
+
+</div>
+<div class="blackjack">
+    <div id="dealercards">
+        <!--dealer's cards-->
+        <p>Dealer's hand</p>
+        <div id = "dealerhand">
+        </div>
+        <div id = "dealerscore">
+        </div>
+        <br>
+    </div>
+    <div id = "messages">
+
+    </div>
+    <div id="playercards">
+        <!--player's cards-->
+        <p>Your hand</p>
+        <div id = "playerhand"> <!--JS will put cards here-->
+        </div>
+    </div>
+    <div id =playerinfo">
+        <div id = "score">
+        </div>
+        <div id = "gamebuttons">
+            <li class = "button" id="hit" style="display:none">Hit</li>
+            <li class = "button" id="deal">Deal</li>
+            <li class = "button" id="stay" style="display:none">Stay</li>
+            <br><br>
+            <div id = "betbuttons">
+                <li class = "button" id="increasebet">Increase Bet</li>
+                <li class = "button" id="decreasebet">Decrease Bet</li>
+                <p>Note: the Increase Bet and Decrease Bet buttons place the bets for you.
+                    The bets are finalized when you hit either the hit or deal buttons. (No need for a "place bet" button.)</p>
+            </div>
+        </div>
+        <br>
+        <li class = "resetbutton" id = "reset_game">Reset</li>
+    </div>
+    <div id = "betinfo">
+        <div id = "walletinfo">
+            <p>You have $___ in your wallet</p>
+        </div>
+        <div id = "betamt">
+            <p>Current bet amount: $___</p>
+        </div>
+    </div>
+
+</div>
+<script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+</script>
+<script src="assets\js\models.js"></script>
+<script src="assets\js\view.js"></script>
+<script src="assets\js\listeners.js"></script>
+<script src="assets\js\app.js"></script>
+
+</body>
+
+</html>
